@@ -21,3 +21,11 @@ function numberOfSteps(num) {
 
 const num = 14;
 console.log(numberOfSteps(num)); 
+
+
+
+// Reverse words in a string 
+
+reverseWords = function(s) {
+    return s.split(' ').map((a)=>a.split('').reverse().join('')).join(' ')
+};
