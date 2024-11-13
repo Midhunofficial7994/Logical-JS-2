@@ -29,3 +29,15 @@ console.log(numberOfSteps(num));
 reverseWords = function(s) {
     return s.split(' ').map((a)=>a.split('').reverse().join('')).join(' ')
 };
+
+// Harshad Number 
+
+var sumOfTheDigitsOfHarshadNumber = function(x) {
+    const res = x.toString().split('').reduce((sum, digit) => sum + Number(digit), 0); 
+    if (x%res===0) {
+        return res
+    }
+    else{
+        return -1
+    }
+};
