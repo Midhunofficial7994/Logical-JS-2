@@ -8,4 +8,22 @@ function isPowerOfThree(n) {
     }
 
     return n === 1;
-}
+} 
+
+// Apply Transform over each Element in an array 
+
+function map(arr, fn) {
+    const result = []; 
+    for (let i = 0; i < arr.length; i++) {
+      result.push(fn(arr[i], i)); 
+    }
+    return result; 
+  }
+  const arr = [1, 2, 3];
+  const fn = function plusone(n) {
+    return n + 1;
+  };
+  
+  const output = map(arr, fn);
+  console.log(output); 
+  
