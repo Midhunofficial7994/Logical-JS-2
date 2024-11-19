@@ -26,4 +26,12 @@ function map(arr, fn) {
   
   const output = map(arr, fn);
   console.log(output); 
+
   
+  // Buy 2 Chocolates   
+
+  var buyChoco = function(prices, money) {
+    prices.sort((a,b) => (a-b));
+    if(money - (prices[0]+prices[1]) < 0) return money;
+    return money - (prices[0]+prices[1]);
+};
