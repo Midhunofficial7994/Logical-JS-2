@@ -34,4 +34,18 @@ function map(arr, fn) {
     prices.sort((a,b) => (a-b));
     if(money - (prices[0]+prices[1]) < 0) return money;
     return money - (prices[0]+prices[1]);
-};
+  }      
+
+  //  Timeout Cancellation 
+
+  var cancellable = function(fn, args, t) {
+    const timeoutId = setTimeout(function() {
+      fn.apply(null, args);
+    }, t);
+  
+    const cancelFn = function() {
+      clearTimeout(timeoutId);
+    };
+  
+    return cancelFn;
+  };
