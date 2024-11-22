@@ -49,3 +49,11 @@ function map(arr, fn) {
   
     return cancelFn;
   };
+
+  // Always return a function Hello world 
+  var createHelloWorld = function() {
+    
+    return function(...args) {
+        return "Hello World"
+    }
+};
