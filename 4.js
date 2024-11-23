@@ -6,3 +6,4 @@ var missingNumber = function(nums) {
     const actualSum = nums.reduce((sum, num) => sum + num, 0);
     return expectedSum - actualSum;
 };
+    
