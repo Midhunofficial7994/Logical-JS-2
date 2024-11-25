@@ -24,4 +24,4 @@ var canPlaceFlowers = function(flowerbed, n) {
     }
 
        return count >= n;
-};
+};    
