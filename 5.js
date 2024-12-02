@@ -42,3 +42,7 @@ function maxNumberOfBalloons(text) {
  
     return Math.floor(minCount)
  }
+
+ // PANGRAM
+
+ checkIfPangram = sentence => new Set(sentence).size === 26
