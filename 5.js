@@ -41,7 +41,7 @@ function maxNumberOfBalloons(text) {
     }
  
     return Math.floor(minCount)
- }
+ } 
 
  // PANGRAM
 
