@@ -46,3 +46,13 @@ function maxNumberOfBalloons(text) {
  // PANGRAM
 
  checkIfPangram = sentence => new Set(sentence).size === 26
+
+ 
+
+
+//  Reverse of String 
+
+
+var reverseString = function(s) {
+    return s.reverse('')
+ };
