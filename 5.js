@@ -56,3 +56,15 @@ function maxNumberOfBalloons(text) {
 var reverseString = function(s) {
     return s.reverse('')
  };   
+
+
+//  Maximum number of words in a sentence 
+
+var mostWordsFound = function(sentences) {
+    let max = 0;
+    for (let sentence of sentences) {
+        let words = sentence.split(' ');
+        max = Math.max(max, words.length)
+    }
+    return max;  
+};
