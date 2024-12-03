@@ -14,7 +14,7 @@ var relativeSortArray = function(arr1, arr2) {
         if(newArr.indexOf(arr1[i]) ==-1){
             newArr.push(arr1[i]);   
         }else{
-        newArr.splice(newArr.indexOf(arr1[i]),0,arr1[i])
+        newArr.splice(newArr.indexOf(arr1[i]),0,arr1[i]) 
         }
     }
     for(let i=0;i<arr2.length;i++){
@@ -55,4 +55,4 @@ function maxNumberOfBalloons(text) {
 
 var reverseString = function(s) {
     return s.reverse('')
- };
+ };   
