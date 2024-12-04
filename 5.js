@@ -66,5 +66,5 @@ var mostWordsFound = function(sentences) {
         let words = sentence.split(' ');
         max = Math.max(max, words.length)
     }
-    return max;  
+    return max;    
 }; 
