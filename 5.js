@@ -15,7 +15,7 @@ var relativeSortArray = function(arr1, arr2) {
             newArr.push(arr1[i]);   
         }else{
         newArr.splice(newArr.indexOf(arr1[i]),0,arr1[i]) 
-        }
+        } 
     }
     for(let i=0;i<arr2.length;i++){
         newArr.splice(newArr.indexOf(arr2[i]),1)
