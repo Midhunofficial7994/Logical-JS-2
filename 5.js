@@ -115,7 +115,7 @@ var isPossibleToSplit = function(nums) {
             used.add(num);
         }
     }
-
+ 
     return true;
 }; 
 
