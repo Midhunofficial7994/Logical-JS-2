@@ -91,3 +91,44 @@ var sortedSquares = function(nums) {
     }
     return sortPowArr;
 };
+
+
+// Split the array 
+
+var isPossibleToSplit = function(nums) {
+    const count = {};
+    for (const num of nums) {
+        count[num] = (count[num] || 0) + 1;
+    }
+
+    const n = nums.length / 2;
+    const used = new Set();
+
+    for (const num in count) {
+        if (count[num] > 2) {
+            return false;
+        }
+        if (count[num] === 2) {
+            if (used.size === n) {
+                return false;
+            }
+            used.add(num);
+        }
+    }
+
+    return true;
+}; 
+
+// Find all numbers disappeared in ana Array
+
+var findDisappearedNumbers = function(nums) {
+    let obj={}
+    for(let n of nums){
+        obj[n]=1
+    }
+    let arr=[]
+    for(let i=1;i<=nums.length;i++){
+        if(!obj[i]) arr.push(i)
+    }
+    return arr
+};
